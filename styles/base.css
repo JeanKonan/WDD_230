@@ -20,13 +20,14 @@ header {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     border-radius: 5px;
-    color: #001d3d;
+    color: #000e1c;
     justify-content: center;
 }
 
 #profile_img{
     width: 100px;
-    border-radius: 5px;
+    border-radius: 15px;
+    border: 1.5px solid #ff7900;
     grid-column: 1 / 2;
 }
 
@@ -39,26 +40,26 @@ a {
 }
 
 nav {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
-    background: #001d3d;
     text-align: center;
     font-family: mooli;
     font-size: 18px;
     font-family: "Libre Baskerville";
-    padding: 20px 0;
-    border-radius: 50px;
 }
 
 nav a{
-    margin: auto 1rem;
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    margin: 10px 0;
+    background: #000e1c;
     color: white;
-    height: 50px;
+    border-radius: 50px;
 }
 
 nav a:hover, nav a:active {
-    height: 50px;
-    color: #ff7900;
+    background: #ff7900;
 }
 
 main {
@@ -86,6 +87,7 @@ main h2 {
     width: 100%;
     padding: 10px 0;
     background: #8ecae6;
+    border-radius: 50px;
 }
 main section ul li {
     list-style: none;
@@ -93,6 +95,6 @@ main section ul li {
 
 footer {
     text-align: center;
-    color:#001d3d;
+    color:#000e1c;
 }
 
