@@ -1,0 +1,39 @@
+@media screen and (min-width: 500px) {
+    header {
+        display: flex;
+    }
+
+    #myName {
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        width: 60%;
+    }
+
+    nav a{
+        color: white;
+        border-radius: 50px;
+        margin: 1.5rem .3rem;
+        padding: .5rem;
+    }
+    
+    nav a:hover, nav a:active {
+        background: #8ecae6;
+        color: #000e1c;
+        border: .08rem solid #000e1c;
+        padding: .42rem;
+    }
+
+    main {
+        display: grid;
+        width: 60%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h2{
+        grid-column: 1/3;
+    }
+
+}
