@@ -4,6 +4,18 @@ primary: 001d3d
 secondary: ff7900
 others: 8ecae6
 */
+body {
+    color: #000e1c;
+    font-family: mooli;
+}
+
+h1, h2, h3 {
+    font-family: "Libre Baskerville";
+}
+
+a {
+    text-decoration: none;
+}
 
 p, div, section {
     font-family: mooli;
@@ -41,7 +53,6 @@ a {
 nav {
     margin: 1.5rem auto;
     text-align: center;
-    font-family: mooli;
     font-size: 18px;
     font-family: "Libre Baskerville";
 }
@@ -90,11 +101,27 @@ main h2 {
     border-top: none;
     height: 150px;
     border-radius: 0 0 15px 15px;
+    text-align: center;
+    padding: 0;
 }
 
 main section li {
     list-style: none;
-    padding: .3rem;
+    margin: 1.5rem auto;
+    
+}
+
+main section li a {
+    padding: .4rem 1rem;
+    background: white;
+    color: #000e1c;
+    border-radius: 15px;
+    border: 1px solid #000e1c;
+    margin: 0 auto;
+}
+
+main section li a:hover {
+    background: #8ecae6;
 }
 
 footer {
