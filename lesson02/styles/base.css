@@ -1,0 +1,102 @@
+body {
+	font-size: 16px;
+	font-family: "inclusive sans";
+}
+
+
+/* phone or baseline views **************************/
+
+header {
+    display: flex;
+    height: 5rem;
+    background: #0f1417;
+    color: white;
+    justify-content: center;
+}
+
+main {
+	margin: 10px auto;
+	display: grid;
+	font-size: 0.8rem;
+}
+
+main section {
+	margin: 0.5rem;
+	padding: 0 1rem;
+    border-radius: 10px;
+}
+
+section .description {
+    text-align: left;
+}
+
+main section h3 {
+	color: #022139;
+}
+
+main section img {
+    display: block;
+    width: 200px;
+    height: auto;
+	box-shadow: 0 0 30px #bbb;
+    border-radius: 10px;
+}
+
+section p {
+    margin: 2rem 0;
+}
+
+a {
+    padding: 10px;
+    margin: 15px;
+    background: #0f1417;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #bbb;
+    color: #0f1417;
+}
+
+footer {
+    display: flex;
+    height: 3rem;
+    background: #0f1417;
+    color: white;
+    justify-content: center;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 400px) {
+	
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card3{
+        grid-column: 1/3;
+    }
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 600px) {
+	main {
+        display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	main .card1{
+		grid-column: 1/2;
+	}
+
+    main .car2{
+		grid-column: 2/3;
+	}
+
+    main .card3{
+		grid-column: 3/4;
+	}
+}
+
