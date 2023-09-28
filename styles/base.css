@@ -38,7 +38,8 @@ header {
 #profile_img{
     padding: 0;
     width: 100px;
-    border-radius: 15px;
+    height: 100px;
+    border-radius: 5px;
     border: 1.5px solid #8ecae6;
 }
 
@@ -64,7 +65,7 @@ nav a{
     margin: .5rem auto;
     background: #000e1c;
     color: white;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 nav a:hover, nav a:active {
@@ -86,35 +87,34 @@ main h2 {
 
 .card {
     padding: 1em;
-    height: 15rem;
+    height: auto;
 }
 
 .card h3 {
     width: 100%;
     padding: 10px 0;
     background: #8ecae6;
-    border-radius: 15px 15px 0 0;
+    border-radius: 5px 5px 0 0;
 }
 
 .card ul, .card div {
-    display: grid;
-    grid-template-rows: repeat(auto-fit 2, 1fr);
     border-radius: 0 0 15px 15px;
-    text-align: center;
-    padding: 0;
+    text-align: left;
+    padding: 0 .5rem;
+    font-size: smaller;
 }
 
 main section li {
+    display: inline-block;
     list-style: none;
-    margin: 1.5rem auto;
-    
+    margin: 1rem auto;
 }
 
 main section li a {
     padding: .4rem 1rem;
     background: white;
     color: #000e1c;
-    border-radius: 15px;
+    border-radius: 5px;
     border: 1px solid #000e1c;
     margin: 0 auto;
 }

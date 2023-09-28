@@ -14,7 +14,7 @@
 
     nav a{
         color: white;
-        border-radius: 50px;
+        border-radius: 5px;
         margin: .5rem .3rem;
         padding: .5rem;
     }
@@ -37,7 +37,11 @@
     }
 
     main section li {
-        display: inline;
+        margin: .5rem auto;
+    }
+
+    main section li a{
+        display: inline-block;
     }
 
 }
