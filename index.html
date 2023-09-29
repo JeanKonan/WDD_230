@@ -24,11 +24,15 @@
         <h1 id="myName">Jean Yves Lionel KONAN</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="chamber/siteplan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li> 
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </div>
+
     </nav>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
@@ -39,12 +43,15 @@
                 <li><a href="lesson02/design.html" target="_blank">Lesson 02</a></li>
                 <li><a href="lesson02/design-principles.html" target="_blank">Design principles</a></li>
                 <li><a href="lesson03/images/combinators.png" target="_blank">Combinators</a></li>
+                <li><a href="https://codepen.io/JeanKonan/pen/GRPGxwd" target="_blank">Pseudo-Elements</a></li>
+                <li><a href="https://codepen.io/JeanKonan/pen/vYvrjGa" target="_blank">Hamburg menu</a></li>
             </ul>
         </section>
         <section class="card">
             <h3>Information</h3>
             <div> Information about the weather</div>
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.159217661887!2d-111.7813829252208!3d43.811056742208926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b1cd75878fd%3A0xe9728b76d994f527!2sRexburg%20Idaho%20Temple!5e0!3m2!1sen!2sus!4v1695953246781!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <p>&copy; <span class="current_year"></span> Jean KONAN - CIV</p>
@@ -52,5 +59,6 @@
     </footer>
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>
 </body>
 </html>

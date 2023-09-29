@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
     header {
         display: flex;
     }
@@ -10,6 +10,24 @@
     nav {
         display: flex;
         width: 60%;
+        margin: 1.5rem auto;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Libre Baskerville";
+    }
+
+    nav #menu {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    nav li{
+        display: inline-block;
+        margin: .75rem auto;
     }
 
     nav a{
@@ -17,10 +35,16 @@
         border-radius: 5px;
         margin: .5rem .3rem;
         padding: .5rem;
+        padding: .5rem;
+        margin: .5rem auto;
+        background: #000e1c;
+        color: white;
+        border-radius: 5px;
     }
+
     
     nav a:hover, nav a:active {
-        background: #8ecae6;
+        background: white;
         color: #000e1c;
         border: .08rem solid #000e1c;
         padding: .42rem;
@@ -42,6 +66,10 @@
 
     main section li a{
         display: inline-block;
+    }
+
+    iframe {
+        grid-column: 1/3;
     }
 
 }

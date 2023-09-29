@@ -40,7 +40,7 @@ header {
     width: 100px;
     height: 100px;
     border-radius: 5px;
-    border: 1.5px solid #8ecae6;
+    border: 1.5px solid white;
 }
 
 #myName {
@@ -49,29 +49,6 @@ header {
 
 a {
     text-decoration: none;
-}
-
-nav {
-    margin: 1.5rem auto;
-    text-align: center;
-    font-size: 18px;
-    font-family: "Libre Baskerville";
-}
-
-nav a{
-    display: block;
-    width: 60%;
-    padding: .5rem;
-    margin: .5rem auto;
-    background: #000e1c;
-    color: white;
-    border-radius: 5px;
-}
-
-nav a:hover, nav a:active {
-    background: #8ecae6;
-    color: #000e1c;
-    border: 1px solid #000e1c;
 }
 
 main {
@@ -123,10 +100,89 @@ main section li a:hover {
     background: #8ecae6;
 }
 
+iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
 footer {
     text-align: center;
     background: #000e1c;
     color: white;
     padding: .5rem;
     font-size: smaller;
+}
+
+.navigation {
+    flex-direction: column;
+    list-style: none;
+}
+
+@media screen and (max-width: 400px) {
+    #menu {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+    padding: .25rem .75rem;
+    background: #000e1c;
+    color: white;
+    position: absolute;
+    top: 17rem;
+    right: 1rem;
+    }
+
+    #menu:hover {
+        background: white;
+        color: #000e1c;
+        border: 1px solid #000e1c;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+        font-family: mooli;
+        font-size: medium;
+    }
+
+    .navigation {
+        flex-direction: column;
+        list-style: none;
+        margin: 1.5rem auto;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Libre Baskerville";
+    }
+
+    .navigation li{
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+        width: 60%;
+        margin: .5rem auto;
+        background: #000e1c;
+        color: white;
+        border-radius: 5px;
+    }
+    .navigation li a:hover {
+        background: white;
+        color: #000e1c;
+        border: 1px solid #000e1c;
+    }
+    
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+    
 }
