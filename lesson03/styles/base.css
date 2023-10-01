@@ -29,13 +29,13 @@ h5, h6 {
 
 header {
     display: block;
-    padding: 1rem 0;
+    padding: .5rem 0;
     background: #721622;
     color: #f8f8ff;
     text-align: center;
 }
 
-header h2, header h4 {
+header h1, header h3 {
     color: #f8f8ff;
 }
 
