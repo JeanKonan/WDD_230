@@ -52,7 +52,7 @@
 
     main {
         display: grid;
-        width: 60%;
+        width: 75%;
         grid-template-columns: 1fr 1fr;
     }
 
