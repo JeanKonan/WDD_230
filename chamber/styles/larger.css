@@ -1,0 +1,247 @@
+@media screen and (min-width: 400px) {
+    nav #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero-img {
+        display: grid;
+        grid-template-columns: auto 30rem auto;
+        grid-template-rows: auto;
+        grid-column: 1/4;
+        width: 100%;
+    }
+    
+    .hero-img img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    
+    .hero-img .foregnd {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        width: 100%;
+    }
+    
+    .hero-img .action {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    main section {
+        margin: 2rem auto;
+        padding: 0;
+    }
+    
+    main .events {
+        display: grid;
+        grid-column: 1/3;
+        grid-template-columns: auto auto;
+        column-gap: 1rem;
+    }
+    
+    main .events h3 {
+        grid-column: 1/3;
+    }
+    
+    main .events article {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+    }
+    
+    main .weather {
+        grid-column: 3/4;
+        margin-right: 0;
+    }
+    
+    main .spotlights {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        grid-column: 1/4;
+    }
+    
+    main .spotlights h3 {
+        grid-column: 1/4;
+    }
+    
+    main .spotlights article {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        column-gap: 1rem;
+        row-gap: .5rem;
+    }
+    
+    main .spotlights article img {
+        grid-row: 1/3;
+        width: 100px;
+    }
+    
+}
+
+/*----- Applies to all to devices -----*/
+
+html{
+    width: auto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background: #f8f8ff;
+    font-family: "Open sans";
+    font-size: 14pt;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    padding: .2rem;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8ff;
+}
+
+header .logo {
+    width: 6rem;
+    padding: 0;
+    margin: 0 20px;
+}
+
+header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+nav{
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.navigation li {
+    display: inline;
+    list-style: none;
+}
+
+nav li a{
+    padding: 2px 15px;
+    /*background: #721622;*/
+    color: #721622;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav li a:hover, header nav li a:active {
+    background: #721622;
+    color: #f8f8ff;
+}
+
+.hero-img {
+    text-align: center;
+    font-size: larger;
+    color: #f8f8ff;
+    padding: 0;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img .foregnd {
+    background: rgba(0, 0, 0, .5);
+}
+
+.hero-img .action {
+    margin: auto;
+}
+
+.action a {
+    padding: 10px 20px;
+    background: #721622;
+    color: #f8f8ff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.action a:hover, .action a:active {
+    background: #065556;
+}
+main {
+    width: auto;
+}
+
+main section {
+    width: auto;
+    padding: 1rem;
+}
+
+main .events h3 {
+    color: #065556;
+}
+
+main .events article:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+main .events article .event-date .day {
+    color: #065556;
+    font-size: larger;
+}
+
+main .events article .event-info .event-title {
+    margin: 0;
+    color: #065556;
+}
+
+main .events article .event-date .month {
+    color: #065556;
+    font-size: smaller;
+}
+
+main .weather {
+    background: rgba(6, 85, 86, .1);
+    border-radius: 5px;
+}
+
+main .spotlights {
+    margin-bottom: 0;
+    width: auto;
+    background: #721622;
+    color: #f8f8ff;
+    text-align: center;
+}
+
+main .spotlights article {
+    text-align: left;
+}
+
+main .spotlights article img {
+    border-radius: 50px;
+}
+
+main .spotlights article .spt-name {
+    margin: 0;
+    font-size: large;
+}
+
+footer{
+    display: block;
+    width: 100%;
+    padding: .2rem 0;
+    text-align: center;
+    background: #065556;
+    color: #f8f8ff;
+    font-size: small;
+}

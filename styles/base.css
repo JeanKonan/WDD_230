@@ -160,6 +160,7 @@ footer {
     .navigation li{
         display: none;
     }
+    
     .navigation li a {
         display: block;
         padding: .5rem;
