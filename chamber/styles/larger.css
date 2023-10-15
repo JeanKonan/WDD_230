@@ -104,13 +104,17 @@ body {
     font-size: 14pt;
 }
 
+.dark {
+    background-color: #111;
+    color: #f8f8ff;
+}
+
 header {
     display: flex;
     width: 100%;
     padding: .2rem;
     align-items: center;
     justify-content: center;
-    background: #f8f8ff;
 }
 
 header .logo {
@@ -122,6 +126,31 @@ header .logo {
 header .logo img{
     width: 100%;
     height: auto;
+}
+
+#mode {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 60px;
+    height: 34px;
+    border-radius: 20px;
+    border: .5px solid rgba(6, 85, 86, .7);
+    cursor: pointer;
+}
+
+#mode:hover {
+    background: rgba(6, 85, 86, .7);
+    color: #f8f8ff;
+    border: 0;
+}
+
+.active {
+    font-size: .8em;
+    margin: auto auto;
 }
 
 nav{
@@ -244,4 +273,8 @@ footer{
     background: #065556;
     color: #f8f8ff;
     font-size: small;
+}
+
+.dark-mode {
+    color: #f8f8ff;
 }
