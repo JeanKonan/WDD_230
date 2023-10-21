@@ -1,4 +1,4 @@
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 1000px) {
     nav #menu {
         display: none;
     }
@@ -16,7 +16,14 @@
         width: 100%;
     }
     
-    .hero-img img {
+    .hero-label{
+        position: absolute;
+        top: 20rem;
+        left: 10rem;
+        color: white;
+    }
+
+    .hero-img picture {
         grid-column: 1/4;
         grid-row: 1/2;
         width: 100%;

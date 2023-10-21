@@ -90,8 +90,15 @@
         width: 100%;
         grid-column: 1/2;
     }
+
+    .hero-label{
+        position: absolute;
+        top: 20rem;
+        left: 10rem;
+        color: white;
+    }
     
-    .hero-img img {
+    .hero-img picture {
         grid-column: 1/2;
         grid-row: 1/2;
         width: 100%;

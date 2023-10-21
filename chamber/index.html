@@ -30,7 +30,7 @@
 <body>
     <header>
         <picture class="logo">
-            <img src="images/BCA_logo.png" alt="Bouake Chamber of Agriculture">
+            <img src="images/BCA_logo.webp" alt="Bouake Chamber of Agriculture">
         </picture>
         
     </header>
@@ -50,7 +50,13 @@
 
     <main>
         <section class="hero-img">
-            <img src="images/hero-img-1.jpeg" alt="bouake market">
+            <picture class="hero">
+                <div class="hero-label">LARGE</div>
+                <source media="(max-width: 500px)" srcset="images/wdd230-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/wdd230-medium.webp">
+                <img src="images/wdd230-large.webp" alt="hero image">
+            </picture>
+            
             <div class="foregnd"></div>
             <div class="action">
                 <h1>
@@ -97,14 +103,16 @@
         <section class="weather">
             <h3>Weather</h3>
             <div>
-                Information about the weather
+                Information about the weather <br>
+
+                <span class="windchill"></span>
             </div>
         </section>
 
         <section class="spotlights">
             <h3>Spotlights</h3>
             <article>
-                <img src="images/avatar.png" alt="spotlight-1">
+                <img src="images/avatar.webp" alt="spotlight-1">
                 <h4 class="spt-name">Lorem Ipsum</h4>
                 <div class="description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
@@ -112,7 +120,7 @@
             </article>
 
             <article>
-                <img src="images/avatar.png" alt="spotlight-2">
+                <img src="images/avatar.webp" alt="spotlight-2">
                 <h4 class="spt-name">Lorem Ipsum</h4>
                 <div class="description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
@@ -120,7 +128,7 @@
             </article>
 
             <article>
-                <img src="images/avatar.png" alt="spotlight-3">
+                <img src="images/avatar.webp" alt="spotlight-3">
                 <h4 class="spt-name">Lorem Ipsum</h4>
                 <div class="description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
@@ -137,5 +145,6 @@
     <script src="../scripts/getdates.js"></script>
     <script src="../scripts/navigation.js"></script>
     <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
