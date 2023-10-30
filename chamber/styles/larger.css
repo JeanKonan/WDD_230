@@ -44,6 +44,34 @@
         margin: 2rem auto;
         padding: 0;
     }
+
+    main .visit {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+
+    main .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    main .content picture img:hover {
+        box-shadow: 0 0 30px #aaa;
+    }
+
+    main aside {
+        grid-column: 3/4;
+        grid-row: 2/3;
+        padding: 10px;
+        margin-right: 2rem;
+        height: 100%;
+        background: rgba(6, 85, 86, .1);
+        border-radius: 15px;
+    }
     
     main .events {
         display: grid;
@@ -214,8 +242,54 @@ nav li a:hover, header nav li a:active {
 .action a:hover, .action a:active {
     background: #065556;
 }
+
 main {
     width: auto;
+}
+
+main .visit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: rgba(6, 85, 86, .1);
+    border-radius: 15px;
+}
+
+main .sidebar div {
+    background: rgba(6, 85, 86, .1);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+main ,.sidebar div picture {
+    text-align: center;
+}
+
+main .sidebar div img {
+    width: 200px;
+    border-radius: 15px;
+    animation: fade 10s;
+}
+
+main .content picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main .content div {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 1rem 0 2rem 0;
+}
+
+main .content img {
+    border-radius: 15px;
+    animation: fade 10s;
 }
 
 main section {
@@ -284,4 +358,14 @@ footer{
 
 .dark-mode {
     color: #f8f8ff;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

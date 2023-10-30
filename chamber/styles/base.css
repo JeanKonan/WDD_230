@@ -82,6 +82,10 @@
         grid-template-columns: 1fr;
     }
 
+    main .content picture img{
+        width: 80%;
+    }
+
     .hero-img {
         display: grid;
         margin-top: 2.5rem;
