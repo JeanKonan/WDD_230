@@ -1,0 +1,40 @@
+table {
+    border: solid thin hsla(0,0%,20%,.8);
+    text-align: center;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    border: solid thin hsla(0,0%,20%,.8);
+}
+
+thead tr:nth-child(2) {
+    background-color: rgb(110, 109, 109);
+}
+
+thead tr td {
+    background-color: black;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+tbody tr:nth-child(2) {
+    background-color: lightgray;
+}
+
+tbody th, tbody td {
+   border: .1px solid darkgrey;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20em;
+}

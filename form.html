@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"           content="width=device-width, initial-scale=1.0">
+    <meta name="description"        content="This is the WDD 230 - Web Frontend Development course assignment portal of Jean Konan">
+    <meta name="author"             content="Jean Konan">
+    <meta property="og:title"       content="Jean Konan - WDD 230 - Web Frontend Development">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://jeankonan.github.io/wdd230/">
+    <meta property="og:image"       content="https://media.istockphoto.com/id/1358013032/photo/web-development-concept.webp?b=1&s=170667a&w=0&k=20&c=aAR7goX4e7jDiUfx1SNA7lD04WldUv6okpifv80xGcw=">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mooli&display=swap">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+    
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <img id="profile_img" src="images/me.jpg" alt="Jean Konan">
+        <h1 id="myName">Jean Yves Lionel KONAN</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li> 
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <form action="record.html" method="get">
+            <fieldset>
+                <legend>Rate Us</legend>
+                <label for="username">
+                    Username <input type="text" id="username" name="username" required>
+                </label>
+                
+                <label for="pwd">
+                    Password <input type="password"  id="pwd" name="password" pattern=".{8,}" required>
+                </label>
+                
+                <label for="pwd1">
+                    Verify password <input type="password"  id="pwd1" name="password" pattern=".{8,}" required>
+                </label>
+                
+                <label for="email">
+                    Email <input type="email" pattern=".+@byui\.edu$" id="email" name="email" placeholder="Please enter a valid email address" required>
+                </label>
+                
+                <label for="rate">
+                    Page Rating 
+                    <input type="range" min="1" max="10" step="1" id="rate" name="rate" value="0">
+                </label>
+                <div id="rangevalue">0</div>
+
+                <button>Submit your rating</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span class="current_year"></span> Jean KONAN - CIV</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
