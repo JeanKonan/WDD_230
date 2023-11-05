@@ -71,7 +71,7 @@
         margin-left: 1rem;
     }
 
-    main .content picture img:hover {
+    main .content figure img:hover {
         box-shadow: 0 0 30px #aaa;
     }
 
