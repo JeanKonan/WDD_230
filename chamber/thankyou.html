@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"        content="This is the Bouake Chamber of Agriculture. It presents the agricultural events in Bouake and provides different parties with an environment to meet and patner up">
+    <meta name="author"             content="Jean Konan">
+    <meta property="og:title"       content="Bouake Chamber of Agriculture">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://jeankonan.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"       content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mota-engil.com%2Fen%2F%3Fproject%3Dbouakes-grand-marche&psig=AOvVaw2GmDWpHWU-lJJt2O6tqUAU&ust=1696203447452000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJj-4rHA04EDFQAAAAAdAAAAABAE">
+    
+    <!-- My fonts' importation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    
+    <!-- My CSS stylesheets -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="images/BCA_logo.ico">
+
+    <title>Bouake Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <picture class="logo">
+            <img src="images/BCA_logo.webp" alt="Bouake Chamber of Agriculture">
+        </picture>
+        
+    </header>
+    <div id="mode">
+        <span class="active">LIGHT</span>
+    </div>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#"><strong>Home</strong></a></li>
+            <li><a href="discover.html"><strong>Discover</strong></a></li>
+            <li><a href="#"><strong>Directory</strong></a></li>
+            <li><a href="#"><strong>Join</strong></a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <div class="thanks">
+            Thanks you for applying for membership!
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="current_year"></span> Jean Yves Lionel Konan | WDD 230 - Chamber Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="../scripts/getdates.js"></script>
+    <script src="../scripts/navigation.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

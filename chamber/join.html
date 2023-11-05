@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"        content="This is the Bouake Chamber of Agriculture. It presents the agricultural events in Bouake and provides different parties with an environment to meet and patner up">
+    <meta name="author"             content="Jean Konan">
+    <meta property="og:title"       content="Bouake Chamber of Agriculture">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://jeankonan.github.io/wdd230/chamber/index.html">
+    <meta property="og:image"       content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mota-engil.com%2Fen%2F%3Fproject%3Dbouakes-grand-marche&psig=AOvVaw2GmDWpHWU-lJJt2O6tqUAU&ust=1696203447452000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJj-4rHA04EDFQAAAAAdAAAAABAE">
+    
+    <!-- My fonts' importation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Young+Serif&display=swap" rel="stylesheet">
+    
+    <!-- My CSS stylesheets -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="images/BCA_logo.ico">
+
+    <title>Bouake Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <picture class="logo">
+            <img src="images/BCA_logo.webp" alt="Bouake Chamber of Agriculture">
+        </picture>
+        
+    </header>
+    <div id="mode">
+        <span class="active">LIGHT</span>
+    </div>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#"><strong>Home</strong></a></li>
+            <li><a href="discover.html"><strong>Discover</strong></a></li>
+            <li><a href="#"><strong>Directory</strong></a></li>
+            <li><a href="#"><strong>Join</strong></a></li>
+        </ul>
+        
+    </nav>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <h1>Membership Application</h1>
+
+            <fieldset>
+                <legend>Personal Information: </legend>
+                
+                <label for="first_name">
+                    First name: <input type="text" id="first_name" name="first_name" required>
+                </label>
+                
+                <label for="last_name">
+                    Last name: <input type="text" id="last_name" name="last_name" required>
+                </label>
+
+                <label for="email">
+                    Email: <input type="email" id="email" name="email" required>
+                </label>
+
+                <label for="mobile">
+                    Mobile number: <input type="tel" id="mobile" name="mobile" required>
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+
+                <label for="title">
+                    Title: <input type="text" id="title" name="title">
+                </label>
+
+                <label for="business_name">
+                    Business name: <input type="text" id="business_name" name="business_name" required>
+                </label>
+                
+                <label for="description">
+                    Business description:
+                    <textarea id="description" name="description" rows="10"></textarea>
+                </label>
+
+            </fieldset>
+
+            <fieldset id="member">
+                <legend>Membership Level: </legend>
+
+                <label for="np">
+                    <input type="radio" id="np" name="mb_level" value="NP Membership is for non profit organizations and there is no fee"> NP Membership
+                </label>
+            
+                <label for="bronze">
+                    <input type="radio" id="bronze" name="mb_level" value="Bronze Membership"> Bronze Membership
+                </label>
+
+                <label for="silver">
+                    <input type="radio" id="silver" name="mb_level" value="Silver Membership"> Silver Membership
+                </label>
+
+                <label for="gold">
+                    <input type="radio" id="gold" name="mb_level" value="gold Membership"> Gold Membership
+                </label>
+            
+            </fieldset>
+
+            <label for="timestamp">
+                <input type="datetime" name="timestamp" id="timestamp" hidden>
+            </label>
+
+            <input type="submit" name="applyBtn" id="applyBtn" value="Apply for membership">
+
+        </form>
+
+        <aside class="benefits">
+            <h3>Membership Benefits</h3>
+
+            <h4>NP Membership (Non-Profit):</h4>
+            <ul>
+                <li>Access to a dedicated support team for non-profit organizations.</li>
+                <li>Inclusion in our non-profit directory to help raise awareness for your cause.</li>
+            </ul>
+
+            <h4>Bronze Membership:</h4>
+            <ul>
+                <li>All NP Membership benefits.</li>
+                <li>Access to member-only webinars and workshops.</li>
+                <li>10% discount on event tickets.</li>
+                <li>Listing in the Bronze member spotlight section on our home page.</li>
+                <li>Access to a resource library with industry reports and best practices.</li>
+            </ul>
+
+            <h4>Silver Membership:</h4>
+            <ul>
+                <li>All Bronze Membership benefits.</li>
+                <li>Priority access to limited-capacity events and workshops.</li>
+                <li>20% discount on event tickets.</li>
+                <li>Personalized industry insights and trends reports.</li>
+                <li>Access to a Silver members-only online community for networking and collaboration.</li>
+                <li>Quarterly one-on-one consultations with industry experts.</li>
+            </ul>
+
+            <h4>Gold Membership:</h4>
+            <ul>
+                <li>All Silver Membership benefits.</li>
+                <li>30% discount on event tickets.</li>
+                <li>Featured promotion in our newsletters and social media.</li>
+                <li>Invitation to an exclusive annual Gold members' gala event.</li>
+                <li>Priority access to partner discounts and business development opportunities.</li>
+                <li>Monthly one-on-one consultations with industry experts.</li>
+                <li>Access to premium training sessions and workshops.</li>
+            </ul>
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; <span class="current_year"></span> Jean Yves Lionel Konan | WDD 230 - Chamber Project</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="../scripts/getdates.js"></script>
+    <script src="../scripts/navigation.js"></script>
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

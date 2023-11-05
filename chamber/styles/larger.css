@@ -40,6 +40,10 @@
         grid-row: 1/2;
     }
 
+    .hero-img .action h1 {
+        color: #f8f8ff;
+    }
+
     main section {
         margin: 2rem auto;
         padding: 0;
@@ -51,7 +55,6 @@
         justify-content: center;
         grid-column: 1/3;
         grid-row: 1/2;
-        color: #065556;
     }    
 
     main .visit {
@@ -77,7 +80,7 @@
         grid-row: 2/3;
         padding: 10px;
         margin-right: 2rem;
-        height: 100%;
+        height: auto;
         background: rgba(6, 85, 86, .1);
         border-radius: 15px;
     }
@@ -128,6 +131,22 @@
     main .spotlights article img {
         grid-row: 1/3;
         width: 100px;
+    }
+
+    form {
+        width: 80%;
+        padding: 2rem;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .benefits {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    main div.thanks{
+        grid-column: 1/4;
     }
     
 }
@@ -254,6 +273,11 @@ nav li a:hover, header nav li a:active {
 
 main {
     width: auto;
+    place-items: center;
+}
+
+main h1 {
+    color: #065556;
 }
 
 main .visit {
@@ -377,4 +401,100 @@ footer{
     100% {
         opacity: 1;
     }
+}
+
+:root {
+    --primary-color: #721622;
+    --secondary-color: #065556;
+    --third-color: #f8f8ff;
+    --font-color: #000;
+    --background-tab: rgb(231, 231, 231);
+    --bord-color: rgb(182, 182, 182);
+    --submit-key: #007BFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    background: var(--background-tab);
+    border-radius: 15px;
+    margin: 1rem 0;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: solid var(--primary-color) 1px;
+    text-align: left;
+}
+
+form fieldset#member label, form fieldset#description label {
+    display: inline-block;
+}
+
+form fieldset legend {
+    padding: 0 1rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+form label input {
+    background-color: var(--third-color);
+    border: .1px solid var(--bord-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form label input:required {
+    border-left: red solid 5px;
+}
+
+form fieldset label input:required:valid {
+    border-left: green solid 5px;
+}
+
+form textarea {
+    border-radius: 15px;
+}
+
+form label {
+    padding: 10px;
+}
+
+main aside.benefits {
+    text-align: left;
+    background-color: var(--third-color);
+}
+
+main div.thanks{
+    margin: 2rem auto;
+    width: 80%;
+}
+
+#applyBtn {
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: var(--third-color);
+    padding: .5rem;
+    border-radius: 15px;
+    border-width: 0;
+    max-width: 20rem;
+}
+
+#applyBtn:hover {
+    background: var(--secondary-color);
+    color: var(--third-color);
+    /* border: .1px solid var(--primary-color); */
+}
+
+.benefits ul li {
+    list-style: disc !important;
+    color: var(--secondary-color);
 }

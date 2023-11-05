@@ -155,4 +155,16 @@
     footer {
         padding: .2rem 0;
     }
+
+    form  {
+        width: 100%;
+        max-width: 20rem;
+        padding: .5rem;
+    }
+
+    .benefits li {
+        list-style-type: disc; /* Add this line */
+    }
+    
+
 }
