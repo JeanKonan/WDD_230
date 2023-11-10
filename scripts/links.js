@@ -1,6 +1,6 @@
 const linksURL = "https://yourgithubusername.github.io/wdd230/data/links.json";
 
-const section = document.querySelector(".card");
+const section = document.querySelector(".lessons");
 const h3 = document.createElement("h3");
 const ul = document.createElement("ul");
 
