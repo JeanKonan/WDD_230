@@ -1,0 +1,88 @@
+{
+    "families": [
+        {
+            "familyName": "Doe",
+            "moveInDate": "2023-01-01",
+            "numberOfPeople": 3,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "John Doe",
+                    "gender": "Male",
+                    "birthdate": "1980-01-01"
+                },
+                {
+                    "name": "Jane Doe",
+                    "gender": "Female",
+                    "birthdate": "1982-02-02"
+                },
+                {
+                    "name": "Baby Doe",
+                    "gender": "Female",
+                    "birthdate": "2023-03-03"
+                }
+            ]
+        },
+        {
+            "familyName": "Smith",
+            "moveInDate": "2023-02-01",
+            "numberOfPeople": 2,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "Adam Smith",
+                    "gender": "Male",
+                    "birthdate": "1975-01-01"
+                },
+                {
+                    "name": "Eve Smith",
+                    "gender": "Female",
+                    "birthdate": "1977-02-02"
+                }
+            ]
+        }, 
+        {
+            "familyName": "Johnson",
+            "moveInDate": "2023-03-01",
+            "numberOfPeople": 4,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "Jack Johnson",
+                    "gender": "Male",
+                    "birthdate": "1980-03-03"
+                },
+                {
+                    "name": "Jill Johnson",
+                    "gender": "Female",
+                    "birthdate": "1982-04-04"
+                },
+                {
+                    "name": "Junior Johnson",
+                    "gender": "Male",
+                    "birthdate": "2010-05-05"
+                },
+                {
+                    "name": "Jenny Johnson",
+                    "gender": "Female",
+                    "birthdate": "2012-06-06"
+                }
+            ]
+        }, 
+        {
+            "familyName": "Williams",
+            "moveInDate": "2023-04-01",
+            "numberOfPeople": 1,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "Wendy Williams",
+                    "gender": "Female",
+                    "birthdate": "1990-07-07"
+                }
+            ]
+        }
+                
+        
+    ]
+}
