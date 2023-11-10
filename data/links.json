@@ -1,15 +1,28 @@
 {
     "lessons": [
         {
-          "lesson": "02",
+          "lesson": "01",
           "links": [
             {
-              "url":"lesson02/mediaquery.html",
+              "url":"lesson01/media-query.html",
               "title":"Media Queries"
             },
             {
+              "url":"lesson01/holygrail.html",
+              "title":"Holygrail"
+            }
+          ]
+        },
+        {
+          "lesson": "02",
+          "links": [
+            {
+              "url":"lesson02/design.html",
+              "title":"Design"
+            },
+            {
               "url":"lesson02/design-principles.html",
-              "title":"Design Principles Document"
+              "title":"Design Principles"
             }
           ]
         },
@@ -17,9 +30,27 @@
           "lesson": "03",
           "links": [
             {
-              "url":"lesson03/chamber-site-plan.html",
-              "title":"Chamber Site Plan"
+              "url":"lesson03/images/combinators.jpg",
+              "title":"Combinators"
             }
+          ]
+        },
+        {
+          "lesson": "04",
+          "links": [
+            {
+              "url":"https://codepen.io/JeanKonan/pen/GRPGxwd",
+              "title":"Pseudo-Elements"
+            },
+            {
+              "url":"https://codepen.io/JeanKonan/pen/vYvrjGa",
+              "title":"Hamburger menu"
+            },
+            {
+              "url":"https://codepen.io/JeanKonan/pen/vYvQmMb",
+              "title":"Pseudo-Classes"
+            }
+            
           ]
         },
         {
@@ -35,8 +66,8 @@
           "lesson": "06",
           "links": [
             {
-              "url":"lesson06/responsive-images.html",
-              "title":"Responsive Images"
+              "url":"chamber/images/hero-img-2.webp",
+              "title":"WebP"
             }
           ]
         },
@@ -45,7 +76,7 @@
           "links": [
             {
               "url":"lesson03/lazyload.html",
-              "title":"Lazy Loading Images"
+              "title":"Lazy Loading"
             },
             {
               "url":"lesson07/bom.html",
@@ -54,17 +85,30 @@
           ]
         },
         {
-            "lesson": "08",
-            "links": [
-              {
-                "url":"lesson08/tablebuild.html",
-                "title":"Table"
-              },
-              {
-                "url":"lesson08/index.html",
-                "title":"Forms"
-              }
-            ]
-          }
+          "lesson": "08",
+          "links": [
+            {
+              "url":"lesson08/tablebuild.html",
+              "title":"Table"
+            },
+            {
+              "url":"lesson08/index.html",
+              "title":"Forms"
+            }
+          ]
+        },
+        {
+          "lesson": "09",
+          "links": [
+            {
+              "url":"lesson09/new-ward-members.json",
+              "title":"JSON"
+            },
+            {
+              "url":"lesson09/prophets.html",
+              "title":"Prophets"
+            }
+          ]
+        }
     ]
 }

@@ -87,6 +87,10 @@ main section li {
     margin: 1rem auto;
 }
 
+main section.lessons li a {
+    margin-right: .5rem;
+}
+
 main section li a {
     padding: .4rem 1rem;
     background: white;
