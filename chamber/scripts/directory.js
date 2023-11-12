@@ -1,6 +1,6 @@
 
 const baseURL = "https://jeanKonan.github.io/wdd230/";
-const membersURL = "https://jeanKonan.github.io/wdd230/data/members.json";
+const membersURL = "https://jeanKonan.github.io/wdd230/chamber/data/members.json";
 const grid = document.querySelector("#grid");
 const list = document.querySelector("#list");
 const directory = document.querySelector(".directory_list");
