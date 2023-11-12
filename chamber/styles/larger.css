@@ -148,7 +148,19 @@
     main div.thanks{
         grid-column: 1/4;
     }
-    
+
+    main h1.directory, main div.displayMode {
+        grid-column: span 3;
+    }
+
+    .directory_list {
+        grid-column: span 3;
+        width: 100%;
+    }
+
+    .list ul li#line > * {
+        padding-left: .5rem;
+    }
 }
 
 /*----- Applies to all to devices -----*/
@@ -497,4 +509,52 @@ main div.thanks{
 .benefits ul li {
     list-style: disc !important;
     color: var(--secondary-color);
+}
+
+
+.directory_list.grid{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.directory_list.list {
+    display: block;
+    width: 100%;
+}
+
+
+.grid #cards {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #f8f8ff;
+    border: 1px solid #bbb;
+    display: block;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.grid #cards img {
+    width: auto;
+    max-width: 325px;
+    height: 100px;
+    border: .3px solid #333;
+    border-radius: 50%;
+}
+
+.list ul li#line {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.directory_list a {
+    color: #721622;
+}
+
+.list ul li#line:nth-child(even) {
+    background-color: rgba(6, 85, 86, .1); /* Change this to your preferred color */
 }

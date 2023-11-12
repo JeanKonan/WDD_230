@@ -1,0 +1,68 @@
+{
+    "member": [
+        {
+            "name": "Eco Energy Solutions",
+            "address": "123 Main St, Bouake, CIV",
+            "phone": "(123) 456-7890",
+            "website": "www.companya.com",
+            "icon": "images/eco.webp",
+            "membershipLevel": "Gold",
+            "otherInfo": "Founded in 2000"
+        },
+        {
+            "name": "Tech Titan Inc.",
+            "address": "456 Oak Ave, Bouake, CIV",
+            "phone": "(234) 567-8901",
+            "website": "www.companyb.com",
+            "icon": "images/titan.webp",
+            "membershipLevel": "Silver",
+            "otherInfo": "Specializes in tech"
+        },
+        {
+            "name": "Quantum Leap Labs",
+            "address": "789 Pine St, Bouake, CIV",
+            "phone": "(345) 678-9012",
+            "website": "www.companyc.com",
+            "icon": "images/quantum.webp",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Established in 1985"
+        },
+        {
+            "name": "Gourmee Gastronomy",
+            "address": "1011 Birch Blvd, Bouake, CIV",
+            "phone": "(456) 789-0123",
+            "website": "www.companyd.com",
+            "icon": "images/gourmet.webp",
+            "membershipLevel": "Silver",
+            "otherInfo": "Leading in innovation"
+        },
+        {
+            "name": "Aero Dynamics",
+            "address": "1213 Cedar Ct, Bouake, CIV",
+            "phone": "(567) 890-1234",
+            "website": "www.companye.com",
+            "icon": "images/aero.webp",
+            "membershipLevel": "Gold",
+            "otherInfo": "Global presence"
+        },
+        {
+            "name": "Maritime Machines",
+            "address": "1415 Dogwood Dr, Bouake, CIV",
+            "phone": "(678) 901-2345",
+            "website": "www.companyf.com",
+            "icon": "images/maritime.webp",
+            "membershipLevel": "Platinum",
+            "otherInfo": "Committed to sustainability"
+        },
+        {
+            "name": "Stellar Space Systems ",
+            "address": "1617 Elm St, Bouake, CIV",
+            "phone": "(789) 012-3456",
+            "website": "www.companyg.com",
+            "icon": "images/stella.webp",
+            "membershipLevel": "Diamond",
+            "otherInfo": "Family-owned since 1970"
+        }
+        
+    ]
+}

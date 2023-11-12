@@ -166,5 +166,15 @@
         list-style-type: disc; /* Add this line */
     }
     
+    .list ul li#line{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 2rem auto;
+        padding: 1rem;
+    }
+
+    .list ul li#line p{
+        margin: 0;
+    }
 
 }
