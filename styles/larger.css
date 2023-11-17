@@ -73,11 +73,18 @@
     }
 
     main section li {
-        margin: .5rem auto;
+        margin: .3rem 0;
     }
 
     main section li a{
         display: inline-block;
+    }
+
+    main section.card ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: left;
+        text-align: left;
     }
 
     iframe {
