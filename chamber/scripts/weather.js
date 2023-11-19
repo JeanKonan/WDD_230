@@ -1,8 +1,5 @@
 
-const currentTemp = document.querySelector('#current-temp')
-const weatherIcon = document.querySelector('#weather-icon')
-const captionDesc = document.querySelector('figcaption')
-
+const currentTemp = document.querySelector('.temp');
 const forecastTemp = document.querySelector('.forecast');
 
 window.onload = function() {
@@ -28,7 +25,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             displayForecast(data);
-            console.log(data);
+            // console.log(data);
         } else {
             throw Error(await response.text());
         }
@@ -53,33 +50,30 @@ function displayForecast(data) {
         const d = new Date(date[0]);
         let forecast_day = weekday[d.getDay()+1];
 
+        let figure = document.createElement('figure');
+
+        let caption = document.createElement('figcaption');
+        let temp = document.createElement('span');
+        let weather_icon = document.createElement('img');
+        let the_day = document.createElement('h4');
+
+        the_day.innerHTML = forecast_day;
+        temp.innerHTML = `${day.main.temp}&deg;F`;
+        const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
+        let desc = day.weather[0].description;
+
+        weather_icon.setAttribute('src', iconsrc);
+        weather_icon.setAttribute('alt', desc);
+        caption.textContent = `${desc}`;
+        figure.append(weather_icon, temp, caption);
+
         if (i == 0) {
-            currentTemp.innerHTML = `${day.main.temp}&deg;F`;
-            const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`
-            let desc = day.weather[0].description;
-            weatherIcon.setAttribute('src', iconsrc);
-            weatherIcon.setAttribute('alt', desc);
-            captionDesc.textContent = `${desc}`;
-            lastDate = forecast_day;
+            currentTemp.appendChild(figure);
         }
 
         if (lastDate != forecast_day & i >= 1) {
-            let figure = document.createElement('figure');
 
-            let caption = document.createElement('figcaption');
-            let temp = document.createElement('span');
-            let weather_icon = document.createElement('img');
-            let the_day = document.createElement('h4');
-
-            the_day.innerHTML = forecast_day;
-            temp.innerHTML = `${day.main.temp}&deg;F`;
-            const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
-            let desc = day.weather[0].description;
-
-            weather_icon.setAttribute('src', iconsrc);
-            caption.textContent = `${desc}`;
-
-            figure.append(weather_icon, temp, caption);
+            
             forecastTemp.append(the_day, figure);
 
             lastDate = forecast_day;            
