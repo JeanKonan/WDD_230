@@ -49,6 +49,10 @@
     </nav>
 
     <main>
+        <div id="banner" style="display: none;">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.</p>
+            <button id="close">❌</button>
+        </div>        
         <section class="hero-img">
             <picture class="hero">
                 <source media="(max-width: 500px)" srcset="images/wdd230-small.webp">
@@ -102,9 +106,19 @@
         <section class="weather">
             <h3>Weather</h3>
             <div>
-                Information about the weather <br>
-
                 <span class="windchill"></span>
+                <div class="temp"> 
+                    <h4>Today</h4>
+                    <figure class="today">
+                        <img id="weather-icon" src="" alt="">
+                        <span id="current-temp"></span>
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="forecast">
+                    
+                </div>
+
             </div>
         </section>
 
@@ -145,5 +159,6 @@
     <script src="../scripts/navigation.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

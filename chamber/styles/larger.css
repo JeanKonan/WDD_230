@@ -161,6 +161,7 @@
     .list ul li#line > * {
         padding-left: .5rem;
     }
+
 }
 
 /*----- Applies to all to devices -----*/
@@ -557,4 +558,41 @@ main div.thanks{
 
 .list ul li#line:nth-child(even) {
     background-color: rgba(6, 85, 86, .1); /* Change this to your preferred color */
+}
+
+.temp figure, .forecast figure {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    gap: .5rem;
+}
+
+.temp h4, .forecast h4{
+    margin-bottom: .2rem;
+}
+
+#banner {
+    position: fixed;
+    width: 100%;
+    background: rgba(114, 22, 34, .3);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+#banner p {
+    margin: 0;
+    display: inline-block;
+}
+
+#close {
+    float: right;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+#banner #close:hover {
+    cursor: pointer;
 }
