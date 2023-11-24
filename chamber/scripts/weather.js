@@ -67,7 +67,7 @@ function displayForecast(data) {
         let the_day = document.createElement('h4');
 
         the_day.innerHTML = forecast_day;
-        temp.innerHTML = `${day.main.temp}&deg;F`;
+        temp.innerHTML = `${Math.floor(day.main.temp)}&deg;F`;
         const iconsrc = `https://openweathermap.org/img/w/${day.weather[0].icon}.png`;
         let desc = day.weather[0].description;
 
