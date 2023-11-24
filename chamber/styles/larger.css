@@ -162,6 +162,14 @@
         padding-left: .5rem;
     }
 
+    #banner {
+        grid-column: span 3;
+    }
+
+    .dark nav li a {
+        color: #f8f8ff;
+    }
+
 }
 
 /*----- Applies to all to devices -----*/
@@ -219,8 +227,8 @@ header .logo img{
 }
 
 #mode:hover {
-    background: rgba(6, 85, 86, .7);
-    color: #f8f8ff;
+    background: rgba(255, 255, 255, .7);
+    color: #000;
     border: 0;
 }
 
@@ -289,9 +297,9 @@ main {
     place-items: center;
 }
 
-main h1 {
+/* main h1 {
     color: #065556;
-}
+} */
 
 main .visit {
     display: flex;
@@ -405,6 +413,11 @@ footer{
 .dark-mode {
     color: #f8f8ff;
 }
+
+.dark main .events h3, .dark main .events article .event-date .day, .dark main .events article .event-date .month, .dark main .events article .event-info .event-title {
+    color: #f8f8ff;
+}
+
 
 @keyframes fade {
     0% {
@@ -572,12 +585,10 @@ main div.thanks{
 }
 
 #banner {
-    position: fixed;
     width: 100%;
     background: rgba(114, 22, 34, .3);
     text-align: center;
     padding: 20px 0;
-    z-index: 100;
 }
 
 #banner p {

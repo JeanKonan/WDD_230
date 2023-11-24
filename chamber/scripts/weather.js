@@ -7,13 +7,16 @@ window.onload = function() {
     var dayOfWeek = d.getDay();
 
     // Check if it's Monday (1), Tuesday (2), or Wednesday (3)
-    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+    if (dayOfWeek >= 1 && dayOfWeek <= 4) {
         document.getElementById('banner').style.display = 'block';
+    } else {
+        document.getElementById('banner').style.display = 'none';   
     }
 
-    document.getElementById('close').onclick = function() {
+    document.getElementById('close').addEventListener('click', () => {
         document.getElementById('banner').style.display = 'none';
-    };
+    })
+
 };
 
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=7.6898163829301485&lon=-5.035242382448299&units=imperial&cnt=24&appid=ba333923df47ef1bc51dc1b48e42e797';
@@ -48,7 +51,13 @@ function displayForecast(data) {
         date = date.split(' ');
 
         const d = new Date(date[0]);
-        let forecast_day = weekday[d.getDay()+1];
+        let forecast_day;
+
+        if (d.getDay() < 6) {
+            forecast_day = weekday[d.getDay()+1];
+        } else {
+            forecast_day = weekday[0];
+        }
 
         let figure = document.createElement('figure');
 
