@@ -162,8 +162,8 @@
         padding: .5rem;
     }
 
-    .benefits li {
-        list-style-type: disc; /* Add this line */
+    .benefits ul li {
+        list-style-type: disc;
     }
     
     .list ul li#line{

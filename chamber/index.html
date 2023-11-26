@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"        content="This is the Bouake Chamber of Agriculture. It presents the agricultural events in Bouake and provides different parties with an environment to meet and patner up">
+    <meta name="description"        content="This is the Bouake Chamber of Commerce. It presents the commercial events in Bouake and provides different parties with an environment to meet and partner up">
     <meta name="author"             content="Jean Konan">
-    <meta property="og:title"       content="Bouake Chamber of Agriculture">
+    <meta property="og:title"       content="Bouake Chamber of Commerce">
     <meta property="og:type"        content="website">
     <meta property="og:url"         content="https://jeankonan.github.io/wdd230/chamber/index.html">
     <meta property="og:image"       content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mota-engil.com%2Fen%2F%3Fproject%3Dbouakes-grand-marche&psig=AOvVaw2GmDWpHWU-lJJt2O6tqUAU&ust=1696203447452000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCJj-4rHA04EDFQAAAAAdAAAAABAE">
@@ -30,7 +30,7 @@
 <body>
     <header>
         <picture class="logo">
-            <img src="images/bca_logo.webp" alt="Bouake Chamber of Agriculture">
+            <img src="images/bca_logo.webp" alt="Bouake Chamber of Commerce">
         </picture>
         
     </header>
@@ -40,7 +40,7 @@
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
-            <li><a href="index.html"><strong>Home</strong></a></li>
+            <li class="active"><a href="index.html"><strong>Home</strong></a></li>
             <li><a href="discover.html"><strong>Discover</strong></a></li>
             <li><a href="directory.html"><strong>Directory</strong></a></li>
             <li><a href="join.html"><strong>Join</strong></a></li>
@@ -65,7 +65,7 @@
                 <h1>
                     Bouake Chamber of Commerce
                 </h1>
-                <a href="#"> Join Us</a>
+                <a href="join.html"> Join Us</a>
             </div>
         </section>
 
@@ -73,33 +73,34 @@
             <h3>Events</h3>
             <article>
                 <div class="event-date">
-                    <div class="day"><strong>13</strong></div>
-                    <div class="month">OCT</div>
+                    <div class="day"><strong>15</strong></div>
+                    <div class="month">DEC</div>
                 </div>
                 <div class="event-info">
                     <h4 class="event-title">
-                        Lorem ipsum dolor sit amet
+                        Annual Holiday Networking Event
                     </h4>
                     <div class="event-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
+                        Join us for our annual holiday networking event. This is a great opportunity to meet local business leaders and entrepreneurs from various industries. Enjoy a festive atmosphere with delicious food and drinks. Don't forget to bring your business cards for a chance to win exciting door prizes.
                     </div>
                 </div>
             </article>
-
+            
             <article>
                 <div class="event-date">
-                    <div class="day"><strong>20</strong></div>
-                    <div class="month">NOV</div>
+                    <div class="day"><strong>22</strong></div>
+                    <div class="month">JAN</div>
                 </div>
                 <div class="event-info">
                     <h4 class="event-title">
-                        Lorem ipsum dolor sit amet
+                        New Year Business Forecast Lunch
                     </h4>
                     <div class="event-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
+                        Start the new year off right with our business forecast lunch. Hear from industry experts about trends to watch in the coming year. This event will provide valuable insights into market dynamics, emerging technologies, and growth opportunities. A delicious lunch will be served, providing a great opportunity for networking.
                     </div>
                 </div>
             </article>
+            
 
         </section>
 
@@ -120,29 +121,7 @@
 
         <section class="spotlights">
             <h3>Spotlights</h3>
-            <article>
-                <img src="images/avatar.webp" alt="spotlight-1">
-                <h4 class="spt-name">Lorem Ipsum</h4>
-                <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
-                </div>
-            </article>
-
-            <article>
-                <img src="images/avatar.webp" alt="spotlight-2">
-                <h4 class="spt-name">Lorem Ipsum</h4>
-                <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
-                </div>
-            </article>
-
-            <article>
-                <img src="images/avatar.webp" alt="spotlight-3">
-                <h4 class="spt-name">Lorem Ipsum</h4>
-                <div class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta nulla at hendrerit pretium.
-                </div>
-            </article>
+            
         </section>
     </main>
 
@@ -154,7 +133,8 @@
     <script src="../scripts/getdates.js"></script>
     <script src="../scripts/navigation.js"></script>
     <script src="scripts/dark.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
     <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>

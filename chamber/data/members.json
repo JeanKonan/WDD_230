@@ -7,7 +7,8 @@
             "website": "www.companya.com",
             "icon": "images/eco.webp",
             "membershipLevel": "Gold",
-            "otherInfo": "Founded in 2000"
+            "otherInfo": "Founded in 2000",
+            "spotlight": "Spotlight on Eco Energy Solutions: A gold member leading the way in sustainable energy solutions since 2000."
         },
         {
             "name": "Tech Titan Inc.",
@@ -16,7 +17,8 @@
             "website": "www.companyb.com",
             "icon": "images/titan.webp",
             "membershipLevel": "Silver",
-            "otherInfo": "Specializes in tech"
+            "otherInfo": "Specializes in tech",
+            "spotlight": "Spotlight on Tech Titan Inc.: A silver member specializing in cutting-edge technology solutions."
         },
         {
             "name": "Quantum Leap Labs",
@@ -25,7 +27,8 @@
             "website": "www.companyc.com",
             "icon": "images/quantum.webp",
             "membershipLevel": "Bronze",
-            "otherInfo": "Established in 1985"
+            "otherInfo": "Established in 1985",
+            "spotlight": "Spotlight on Quantum Leap Labs: A bronze member making strides in scientific research since 1985."
         },
         {
             "name": "Gourmee Gastronomy",
@@ -34,7 +37,8 @@
             "website": "www.companyd.com",
             "icon": "images/gourmet.webp",
             "membershipLevel": "Silver",
-            "otherInfo": "Leading in innovation"
+            "otherInfo": "Leading in innovation",
+            "spotlight": "Spotlight on Gourmee Gastronomy: A silver member leading the way in culinary innovation."
         },
         {
             "name": "Aero Dynamics",
@@ -43,7 +47,8 @@
             "website": "www.companye.com",
             "icon": "images/aero.webp",
             "membershipLevel": "Gold",
-            "otherInfo": "Global presence"
+            "otherInfo": "Global presence",
+            "spotlight": "Spotlight on Aero Dynamics: A gold member with a global presence in the aerospace industry."
         },
         {
             "name": "Maritime Machines",
@@ -51,8 +56,9 @@
             "phone": "(678) 901-2345",
             "website": "www.companyf.com",
             "icon": "images/maritime.webp",
-            "membershipLevel": "Platinum",
-            "otherInfo": "Committed to sustainability"
+            "membershipLevel": "Silver",
+            "otherInfo": "Committed to sustainability",
+            "spotlight": "Spotlight on Maritime Machines: A platinum member committed to sustainable practices in the maritime industry."
         },
         {
             "name": "Stellar Space Systems ",
@@ -60,9 +66,9 @@
             "phone": "(789) 012-3456",
             "website": "www.companyg.com",
             "icon": "images/stella.webp",
-            "membershipLevel": "Diamond",
-            "otherInfo": "Family-owned since 1970"
+            "membershipLevel": "Gold",
+            "otherInfo": "Family-owned since 1970",
+            "spotlight": "Spotlight on Stellar Space Systems: A diamond member and family-owned business pioneering space systems since 1970."
         }
-        
     ]
 }

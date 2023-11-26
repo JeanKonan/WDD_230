@@ -255,9 +255,13 @@ nav li a{
     text-decoration: none;
 }
 
-nav li a:hover, header nav li a:active {
+nav li a:hover, header nav li a:active , nav li.active a {
     background: #721622;
     color: #f8f8ff;
+}
+
+nav li.active a {
+    padding: 2px 15px;
 }
 
 .hero-img {
@@ -369,6 +373,10 @@ main .events article .event-info .event-title {
     color: #065556;
 }
 
+.event-info {
+    text-align: left;
+}
+
 main .events article .event-date .month {
     color: #065556;
     font-size: smaller;
@@ -388,6 +396,10 @@ main .spotlights {
 }
 
 main .spotlights article {
+    text-align: left;
+}
+
+.spotlights .description, .spotlights .spt-name {
     text-align: left;
 }
 
@@ -518,6 +530,10 @@ main div.thanks{
     background: var(--secondary-color);
     color: var(--third-color);
     /* border: .1px solid var(--primary-color); */
+}
+
+.benefits {
+    padding: 0 2rem;
 }
 
 .benefits ul li {

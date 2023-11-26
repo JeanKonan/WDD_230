@@ -22,6 +22,7 @@ window.onload = function() {
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=7.6898163829301485&lon=-5.035242382448299&units=imperial&cnt=24&appid=ba333923df47ef1bc51dc1b48e42e797';
 
 // 7.6898163829301485, -5.035242382448299
+
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -78,6 +79,12 @@ function displayForecast(data) {
 
         if (i == 0) {
             currentTemp.appendChild(figure);
+            const temperature = day.main.temp;
+            const windspeed = day.wind.speed;
+            const windchill = document.querySelector(".windchill");
+
+            windchill.textContent = "Windchill: " + (35.74 + 0.6215 * temperature - 35.75 * Math.pow(windspeed, 0.16) + 0.4275 * temperature *  Math.pow(windspeed, 0.16)).toFixed(1) + " mph";
+            
         }
 
         if (lastDate != forecast_day & i >= 1) {

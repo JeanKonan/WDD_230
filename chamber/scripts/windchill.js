@@ -7,7 +7,3 @@ if (temp <= 50 & windspeed > 3) {
 } else {
     windchill.textContent = "Windchill: N/A";
 }
-
-
-
-
