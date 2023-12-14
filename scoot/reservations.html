@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"           content="width=device-width, initial-scale=1.0">
+    <meta name="description"        content="Scoot is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <meta name="author"             content="Jean Konan">
+    <meta property="og:title"       content="~Scoot~ Rental scooters">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://jeankonan.github.io/wdd230/scoot/index.html">
+    <meta property="og:image"       content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhawaiimoped.com%2F&psig=AOvVaw24btBCFPSRKgmWadleIuCj&ust=1702364141475000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDXg-HmhoMDFQAAAAAdAAAAABAE">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Rethink+Sans&display=swap" rel="stylesheet">
+
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/scoot-favicon.ico">
+    
+    <title>Reservation</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/scoot-2.webp" alt="Scoots logo">
+        </picture>
+        <nav>
+            <button id="menu" name="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li class="visited"><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="reservation">
+    
+        <section class="reservation-form">
+            <h1>Reservation Form</h1>
+            <p>Fill out the form below to secure your rental.</p>
+
+            <form action="confirmation.html" method="post">
+    
+                <label for="date" class="date">Date: <input type="date" id="date" name="date" required></label>
+                
+    
+                <label for="period" class="rental_period">Rental Period: 
+                    <select id="period" name="period" required>
+                        <option value="" disabled selected>Select Rental Period</option>
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+                    </select>
+                </label>
+                
+    
+                <label for="rentalType" class="rental_type">Rental Type: 
+                    <select id="rentalType" name="rentalType" required>
+                        <option value="" disabled selected>Select Rental Type</option>
+                        <option value="hondaMetro">Honda Metropolitan (49cc)</option>
+                        <option value="hondaDio">Honda Dio (110cc)</option>
+                        <option value="hondaPCX">Honda PCX150 (149cc)</option>
+                        <option value="hondaPioneer">Honda Pioneer ATV</option>
+                        <option value="jeepWrangler4door">Jeep Wrangler - 4 door with A/C</option>
+                        <option value="jeepWrangler2door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+    
+                <label for="number" class="number">Number of Persons: <input type="number" id="number" name="number" min="1" required></label>
+    
+                <label for="phone" class="phone">Phone Number: <input type="tel" id="phone" name="phone" required></label>
+    
+                <label for="name" class="name">Name: <input type="text" id="name" name="name" required></label>
+    
+                <label for="email" class="email">Email: <input type="email" id="email" name="email" required></label>
+    
+                <label for="location" class="location">Drop-off Location (if applicable): <input type="text" id="location" name="location"></label>
+    
+                <label for="comments" class="comment">Special Accommodations/Comments: <textarea id="comments" name="comments" rows="4"></textarea></label>
+                
+                <label for="agreeCheckbox" class="agree"><input type="checkbox" id="agreeCheckbox" name="agreeCheckbox" required> I have read and agree to the terms and conditions.</label>
+    
+                <input type="submit" value="Submit Reservation" name="submit_reservation" id="submit_reservation">
+            </form>
+        </section>
+
+        <section class="rental-agreement">
+            <h2>Rental Agreement Information</h2>
+            <p>Please review and agree to the following terms and conditions before making a reservation:</p>
+    
+            <ul>
+                <li><strong>Security Deposit:</strong> A $50 security deposit is required to confirm reservations.</li>
+                <li><strong>Driver's License:</strong> A valid driver's license is required at the time of rental.</li>
+                <li><strong>Age Restriction:</strong> No one under the age of 12 years is allowed to ride scooters.</li>
+                <li><strong>Fuel Charge:</strong> Fuel charge is not included in the rental prices.</li>
+                <li><strong>Unlimited Mileage:</strong> Enjoy unlimited mileage during your rental.</li>
+                <li><strong>Liability Insurance:</strong> Liability insurance is included in the rental.</li>
+                <li><strong>Damage Insurance:</strong> Optional damage insurance is available for purchase.</li>
+                <li><strong>Free Delivery:</strong> Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li><strong>Payment Options:</strong> Payment accepted via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                <li><strong>Return Locations:</strong> Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+    
+    </main>
+
+    <footer>
+        
+        <div>
+            <a href="https://www.facebook.com/scootsrentals" class="fa fa-facebook" target="_blank" aria-label="Visit our facebook page"></a>
+            <a href="https://twitter.com/scootsrentals" class="fa fa-twitter" target="_blank" aria-label="Visit our twitter page"></a>
+            <a href="https://www.instagram.com/scootsrentals" class="fa fa-instagram" target="_blank" aria-label="Visit our instagram page"></a>
+        </div>
+        <p>&copy; <span class="current_year"></span> Scoots | Motor scooter rental |</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

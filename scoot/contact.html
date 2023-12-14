@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"           content="width=device-width, initial-scale=1.0">
+    <meta name="description"        content="Scoot is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <meta name="author"             content="Jean Konan">
+    <meta property="og:title"       content="~Scoot~ Rental scooters">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://jeankonan.github.io/wdd230/scoot/index.html">
+    <meta property="og:image"       content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhawaiimoped.com%2F&psig=AOvVaw24btBCFPSRKgmWadleIuCj&ust=1702364141475000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDXg-HmhoMDFQAAAAAdAAAAABAE">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Rethink+Sans&display=swap" rel="stylesheet">
+
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/scoot-favicon.ico">
+    
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/scoot-2.webp" alt="Scoots logo">
+        </picture>
+        <nav>
+            <button id="menu" name="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li class="visited"><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact-page">
+        <section class="contact-info">
+            <h1>Contact Information</h1>
+            <p>Feel free to reach out to us with any questions or concerns.</p>
+            <ul>
+                <li><strong>Phone: +52 55 1234 5678</strong> </li>
+                <li><strong>Email: scootsrentals@company.com</strong></li>
+            </ul>
+        </section>
+        
+        <section class="map">
+            <h2>Our Locations</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.872061267461!2d-86.95266422658416!3d20.511470305348094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sen!2sus!4v1702456291769!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+            
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="thank_you.html" method="post">
+                
+                <label for="name" class="name">Name: <input type="text" id="name" name="name" required></label>
+                
+                <label for="email" class="email">Email: <input type="email" id="email" name="email" required></label>
+            
+                <label for="comments" class="comment">Comments: <textarea id="comments" name="comments" rows="4" required></textarea></label>
+            
+                <input type="submit" name="submit_comment" value="Submit comment" id="submit">
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        
+        <!-- Add font awesome icons -->
+        <div>
+            <a href="https://www.facebook.com/scootsrentals" class="fa fa-facebook" target="_blank" aria-label="Visit our facebook page"></a>
+            <a href="https://twitter.com/scootsrentals" class="fa fa-twitter" target="_blank" aria-label="Visit our twitter page"></a>
+            <a href="https://www.instagram.com/scootsrentals" class="fa fa-instagram" target="_blank" aria-label="Visit our instagram page"></a>
+        </div>
+        <p>&copy; <span class="current_year"></span> Scoots | Motor scooter rental |</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

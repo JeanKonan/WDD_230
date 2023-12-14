@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"           content="width=device-width, initial-scale=1.0">
+    <meta name="description"        content="Scoot is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+    <meta name="author"             content="Jean Konan">
+    <meta property="og:title"       content="~Scoot~ Rental scooters">
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://jeankonan.github.io/wdd230/scoot/index.html">
+    <meta property="og:image"       content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhawaiimoped.com%2F&psig=AOvVaw24btBCFPSRKgmWadleIuCj&ust=1702364141475000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDXg-HmhoMDFQAAAAAdAAAAABAE">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia&family=Rethink+Sans&display=swap" rel="stylesheet">
+
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/scoot-favicon.ico">
+    
+    <title>Scoots</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/scoot-2.webp" alt="Scoots logo">
+        </picture>
+        <nav>
+            <button id="menu" name="menu"></button>
+            <ul class="navigation">
+                <li class="visited"><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="banner">
+            <p>The highest temperature of the day is <span class="high"></span> &deg;F</p>
+            <button id="close" name="close">❌</button>
+        </div>
+        <section class="home">
+            <div class="img-bg-color"></div>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/home-img-sm.webp">
+                <source media="(max-width: 1000px)" srcset="images/home-img-md.webp">
+                <img src="images/home-img-lg.webp" alt="home scooter" width="1500" height="750" loading="lazy">
+            </picture>
+            <div class="home-info">
+                <h1>Scoots</h1>
+                <p>Need a ride but don't want to harm the environment? Give a try to our motor sccoters. Moving will become your passion.</p>
+                <button id="booking" name="booking">Book your ride</button>
+            </div>
+        </section>
+
+        <section class="rentals">
+            <h2>Rental types</h2>
+            <figure>
+                <img src="images/honda-metro.webp" alt="Scooters" loading="lazy">
+                <figcaption>Scooters- Max Passenger: 2</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/atv-1000.webp" alt="Side-by-side ATVs" loading="lazy">
+                <figcaption>ATVs- Max Passenger: 4</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/jeep.webp" alt="Jeeps" loading="lazy">
+                <figcaption>Jeeps- Max Passenger: 5</figcaption>
+            </figure>
+        </section>
+        
+        <div class="other">
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="temp"> 
+                    <h3>Today</h3>
+                     
+                </div>
+                <div class="forecast">
+                    
+                </div>
+            </section>
+
+            <section class="why">
+                <h2>No better ride than this</h2>
+                <p>
+                    Discover the heart of Cozumel with ~Scoots~ - your premier motor scooter rental choice on this sun-soaked island. Conveniently located near the ferry dock and cruise terminal, we offer a hassle-free experience for locals, spontaneous wanderers, and motor enthusiasts. Choose from our diverse fleet, including Honda scooters for solo adventures, rugged Jeeps, and adventurous side-by-side ATVs for group explorations. With transparent pricing, flexible payment options, and free delivery for 2+ day rentals, we ensure a carefree escape. Unleash the spirit of Cozumel's southern and eastern shores with ~Scoots~ - where your island adventure begins!
+                </p>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer>
+        
+        <!-- Add font awesome icons -->
+        <div>
+            <a href="https://www.facebook.com/scootsrentals" class="fa fa-facebook" target="_blank" aria-label="Visit our facebook page"></a>
+            <a href="https://twitter.com/scootsrentals" class="fa fa-twitter" target="_blank" aria-label="Visit our twitter page"></a>
+            <a href="https://www.instagram.com/scootsrentals" class="fa fa-instagram" target="_blank" aria-label="Visit our instagram page"></a>
+        </div>
+        <p>&copy; <span class="current_year"></span> Scoots | Motor scooter rental |</p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

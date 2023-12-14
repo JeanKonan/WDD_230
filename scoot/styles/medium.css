@@ -1,0 +1,184 @@
+@media screen and (max-width: 1000px) and (min-width: 500px){
+    
+    header picture img {
+        margin-left: 5rem;
+    }
+
+    #menu {
+        display: block;
+        font-size: 1.5rem;
+        border: 1px solid var(--secondary-color--);
+        padding: .25rem .75rem;;
+        color: var(--secondary-color--);
+        background-color: var(--primary-color--);
+        position: absolute;
+        top: .4rem;
+        right: 1rem;
+    }
+    
+    #menu:hover {
+        background: var(--secondary-color--);
+        color: var(--primary-color--);
+        border: 1px solid var(--secondary-color--);
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "X";
+    }
+
+    .navigation {
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        font-family: var(--title-font--);
+    }
+    
+    .navigation li{
+        display: none;
+    }
+        
+    .navigation li a {
+        display: block;
+        padding: .5rem;
+        text-align: center;
+        width: 100%;
+        background: var(--primary-color--);
+        color: var(--secondary-color--);
+    }
+
+    .navigation li a:hover {
+        background: white;
+        color: var(--secondary-color--);
+    }
+
+    ul.navigation.open {
+        margin-top: 12.9rem;
+        margin-left: 10rem;
+        z-index: 100;
+        width: 100%;
+    }
+        
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    
+    .open li a {
+        display: block;
+        width: 100%;
+    }
+    
+    main section.home .img-bg-color {
+        width: 80%;
+        height: 150px;
+        margin-left: 5%;
+        background-color: var(--secondary-color--);
+        opacity: .8;
+        grid-area: 1/1;
+    }
+    
+    main section.home picture {
+        width: 80%;
+        height: auto;
+        margin: 13% 0 0 10%;
+        grid-area: 1/1;
+        z-index: 2;
+    }
+
+    main section.home .home-info {
+        padding: 1rem 2rem 0;
+    }
+
+    main section.rentals h3 {
+        grid-row: 1/2;
+        grid-column: span 3;
+    }
+    
+    main section.rentals figure {
+        grid-row-start: 2;
+        grid-column: span 1;
+    }
+    
+    main section.home .home-info {
+        padding: 1rem 2rem 0;
+    }
+
+    main div.other section.why {
+        margin: 0 auto;
+    }
+
+    main div.other section.why p {
+        width: 80%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    /* Contact page */
+    main#contact-page section.contact-info{
+        grid-column: span 4;
+        margin: 0 auto;
+    }
+
+    main#contact-page section.map {
+        grid-column: span 4;
+        margin: 0 auto;
+    }
+
+    main#contact-page section.contact-form {
+        grid-column: span 4;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    main#contact-page section.contact-form form {
+        padding: 2rem;
+    }
+
+    /* Reservation page */
+
+    main#reservation .reservation-form{
+        grid-column: span 2;
+        margin: 2rem auto;
+        width: 80%;
+    }
+
+    main#reservation .rental-agreement{
+        grid-column: span 2;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    main#reservation section.reservation-form form {
+        padding: 2rem;
+    }
+
+    /* Rental page */
+    main#rental section.hero {
+        grid-column: span 2;
+    }
+
+    main#rental section.hero p {
+        padding: 2rem;
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    main#rental section.rental-options {
+        grid-column: span 2;
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    main#rental section.rental-options div.rental-container table.rental-table {
+        border-spacing: 1rem;
+        font-size: 2rem;
+    }
+    
+    main#rental section.rental-options div.rental-container table.rental-table>tr:first-child{
+        padding: 1rem;
+    }
+}

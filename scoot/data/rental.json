@@ -1,0 +1,44 @@
+{
+    "Scooters": [
+      { 
+        "type": "Honda Metropolitan (49cc)", 
+        "capacity": 1, 
+        "halfDay": 20, 
+        "fullDay": 30 
+      },
+      { 
+        "type": "Honda Dio (110cc)", 
+        "capacity": 2, 
+        "halfDay": 30, 
+        "fullDay": 40 
+      },
+      { 
+        "type": "Honda PCX150 (149cc)", 
+        "capacity": 2, 
+        "halfDay": 40, 
+        "fullDay": 50 
+      }
+    ],
+    "Atvs": [
+      { "type": "Honda Pioneer 1000", 
+        "capacity": 4, 
+        "halfDay": 50, 
+        "fullDay": 70 
+      }
+    ],
+    "Jeeps": [
+      { 
+        "type": "Jeep Wrangler - 4 door with A/C", 
+        "capacity": 5, 
+        "halfDay": 70, 
+        "fullDay": 100 
+      },
+      { 
+        "type": "Jeep Wrangler - 2 door", 
+        "capacity": 4, 
+        "halfDay": 60, 
+        "fullDay": 85 
+      }
+    ]
+  }
+  

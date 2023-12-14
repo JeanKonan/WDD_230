@@ -1,0 +1,599 @@
+:root {
+    --primary-color--: #ffcc33;
+    --secondary-color--: #333333;
+
+    --title-font--: "Kalnia";
+    --body-font--: "Rethink Sans";
+    --font-size--: 15px;
+
+    --border-radius--: 5px;
+}
+
+body {
+    font-family: var(--body-font--);
+    color: var(--secondary-color--);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font--);
+    color: var(--secondary-color--);
+}
+
+button {
+    border-radius: var(--border-radius--);
+}
+
+img {
+    animation: fade 3ms;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: var(--primary-color--);
+    border-bottom: .5px solid var(--secondary-color--);
+}
+
+header picture {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header picture img {
+    width: 150px;
+    padding: 30px 10px 10px;
+    z-index: 100;
+    margin-left: 10rem;
+    border-bottom: 3px solid var(--secondary-color--);
+    background-color: white;
+}
+
+header nav {
+    text-align: left;
+}
+
+header nav .navigation li a {
+    text-decoration: none;
+    font-family: var(--title-font--);
+    color: var(--secondary-color--);
+}
+
+main section.home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 5rem auto;
+    align-items: center;
+}
+
+main section.home .img-bg-color {
+    background-color: var(--secondary-color--);
+    opacity: .8;
+    border-radius: var(--border-radius--);
+}
+
+main section.home picture img {
+    width: 100%;
+    height: 100%;
+    border: 5px dashed white;
+    border-radius: var(--border-radius--);
+}
+
+main section.home .home-info {
+    padding: 0 7rem 0 2rem;
+    text-align: center;
+}
+
+main section.home .home-info button#booking, main#contact-page section.contact-form form #submit, main#reservation section.reservation-form form input#submit_reservation{
+    border-width: 0;
+    padding: 10px;
+    border: 1px solid rgb(51, 51, 51, .2);
+    background-color: var(--primary-color--);
+    color: var(--secondary-color--);
+    border-radius: var(--border-radius--);
+}
+
+main section.home .home-info button#booking:hover, main#contact-page section.contact-form form #submit:hover, main#reservation section.reservation-form form input#submit_reservation:hover {
+    background-color: var(--secondary-color--);
+    color: white;
+    cursor: pointer;
+}
+
+main section.rentals {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: .3rem;
+    padding: 1rem 0;
+    background-color: var(--primary-color--);
+    align-items: center;
+    text-align: center;
+}
+
+main section.rentals figure {
+    margin: 0 auto;
+}
+
+main section.rentals figure img {
+    width: 90%;
+    border: 5px solid white;
+    border-radius: var(--border-radius--);
+}
+
+main section.rentals figure figcaption {
+    margin: 10px;
+}
+
+main div.other {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 1rem auto;
+}
+
+main div.other section.weather{
+    grid-column: span 1;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+main div.other section.weather figure{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main div.other section.weather figure span{
+    padding: 1rem 0;
+    grid-column: span 2;
+    grid-row: 1/2;
+    background-color: rgb(51, 51, 51, .1);
+    border-radius: var(--border-radius--);
+}
+
+main div.other section.weather figure img, main div.other section.weather figure figcaption {
+    grid-row: 2/3;
+}
+
+#banner {
+    width: 100%;
+    background: rgba(114, 22, 34, .1);
+    text-align: center;
+    padding: 20px 0;
+}
+
+#banner p {
+    margin: 0;
+    display: inline-block;
+}
+
+#close {
+    float: right;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+#banner #close:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------- */
+
+main div.other section.why{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto;
+    margin: 0 auto;
+    width: 80%;
+}
+
+main div.other section.why p {
+    background-color: white;
+    border-radius: var(--border-radius--);
+    border-bottom: 4px dotted rgb(51, 51, 51, .8);
+    border-top: 4px dotted rgb(51, 51, 51, .8);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    padding: .4rem;
+    justify-content: center;
+    background-color: var(--secondary-color--);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: white; /* Adjust the color as needed */
+    text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: var(--font-size--);
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    background-color: var(--primary-color--);
+}
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+.fa-facebook {
+    background: white;
+    color: var(--secondary-color--);
+}
+  
+  /* Twitter */
+.fa-twitter {
+    background: white;
+    color: var(--secondary-color--);
+}
+
+.fa-instagram {
+    background: white;
+    color: var(--secondary-color--);
+}
+
+.high {
+    font-size: large;
+}
+
+/* Contact page */
+main#contact-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+main#contact-page section.contact-info ul li{
+    list-style: none;
+}
+
+main#contact-page section.map iframe{
+    border-radius: var(--border-radius--);
+}
+
+main#contact-page section.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(51, 51, 51, .1);
+    border-radius: var(--border-radius--);
+    border: .5px solid rgb(51, 51, 51, .2);
+}
+
+main#contact-page section.contact-form form label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: left;
+}
+
+main#contact-page section.contact-form form label input, main#contact-page section.contact-form form label textarea {
+    border-radius: var(--border-radius--);
+    border: 1px solid rgb(51, 51, 51, .4);
+}
+
+main#contact-page section.contact-form form label input[type=text], main#contact-page section.contact-form form label input[type=email] {
+    padding: .3rem;
+}
+
+/* Reservation page */
+
+main#reservation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+main#reservation section.reservation-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(51, 51, 51, .1);
+    border-radius: var(--border-radius--);
+    border: .5px solid rgb(51, 51, 51, .2);
+}
+
+main#reservation section.reservation-form form label {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: left;
+}
+
+main#reservation section.reservation-form form label.agree {
+    flex-direction: row;
+    gap: .5rem;
+    text-align: left;
+}
+
+main#reservation section.reservation-form form label input, main#reservation section.reservation-form form label textarea, main#reservation section.reservation-form form label select {
+    border-radius: var(--border-radius--);
+    border: 1px solid rgb(51, 51, 51, .4);
+}
+
+main#reservation section.reservation-form form label input[type=text], main#reservation section.reservation-form form label input[type=email], main#reservation section.reservation-form form label input[type=tel], main#reservation section.reservation-form form label input[type=number], main#reservation section.reservation-form form label input[type=date], main#reservation section.reservation-form form label select {
+    padding: .3rem;
+}
+
+main#reservation .rental-agreement ul li{
+    padding: .5rem;
+    list-style: square;
+}
+
+main#reservation .rental-agreement ul li::marker{
+    color: var(--primary-color--);
+    font-size: larger;
+}
+
+main#reservation .rental-agreement{
+    text-align: left;
+}
+
+/* Rental page */
+
+main#rental {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main#rental section.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+main#rental section.hero picture, main#rental section.hero p{
+    grid-area: 1/1;
+}
+
+main#rental section.hero picture {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+main#rental section.hero picture img{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+main#rental section.hero p {
+    color: white;
+    margin: 0 auto;
+    z-index: 4;
+    background-color: rgb(0, 0, 0, .5);
+    border-radius: var(--border-radius--);
+}
+
+main#rental section.rental-options div.rental-container table.rental-table {
+    margin: 0 auto;
+    border-spacing: 0;
+    text-align: left;
+    border: 1px solid rgb(51, 51, 51, 1);
+    border-radius: var(--border-radius--);
+}
+
+main#rental section.rental-options div.rental-container table.rental-table tr:first-child td{
+    border: 1px solid var(--secondary-color--);
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc33;
+}
+
+main#rental section.rental-options div.rental-container table.rental-table tr td{
+    margin: 0;
+    padding: 1rem 0;
+}
+
+@media screen and (min-width: 1000px){
+    
+    header {
+        gap: 20rem;
+    }
+
+    header picture img {
+        margin-left: 10rem;
+    }
+
+    header nav button#menu{
+        display: none;
+    }
+
+    header nav .navigation li {
+        display: inline;
+        height: 100%;
+        padding-right: 2rem;
+    }
+    
+    header nav .navigation li a {
+        width: 100px;
+        height: 100%;
+        padding: 15px 10px;
+        border-bottom: .5px solid var(--secondary-color--);
+    }
+
+    header nav .navigation li.visited {
+        background-color: var(--secondary-color--);
+        padding: 15px 10px;
+    }
+
+    header nav .navigation li.visited a:hover {
+        color: var(--secondary-color--);
+    }
+
+    header nav .navigation li.visited a {
+        color: white;
+    }
+    
+    header nav .navigation li:hover {
+        background-color: white;
+        padding: 15px 10px;
+    }
+
+    main section.home {
+        margin: 5rem auto;
+    }
+    
+    main section.home .img-bg-color {
+        width: 500px;
+        height: 250px;
+        margin-left: 90px;
+        background-color: var(--secondary-color--);
+        opacity: .8;
+        grid-area: 1/1;
+    }
+    
+    main section.home picture {
+        width: 500px;
+        height: 250px;
+        margin: 40px 0 0 115px;
+        grid-area: 1/1;
+        z-index: 2;
+    }
+
+    main section.home .home-info {
+        padding: 0 7rem 0 2rem;
+    }
+
+    main section.rentals {
+        column-gap: .3rem;
+    }
+
+    main section.rentals h2 {
+        grid-row: 1/2;
+        grid-column: span 3;
+    }
+    
+    main section.rentals figure {
+        grid-row-start: 2;
+    }
+    
+    main div.other {
+        width: 80%;
+    }
+
+    main div.other section.why{
+        grid-column: span 2;
+    }
+
+    main div.other section.why p {
+        width: 65%;
+        padding: 4rem;
+    }
+
+    /* Contact page */
+    main#contact-page section.contact-info{
+        grid-column: span 4;
+        margin: 0 auto;
+    }
+
+    main#contact-page section.map {
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+
+    main#contact-page section.contact-form {
+        grid-column: span 2;
+        margin: 0 auto;
+    }
+
+    main#contact-page section.contact-form form {
+        padding: 4.5rem 5rem;
+    }
+
+    main#contact-page section.map iframe{
+        margin-left: 5rem;
+    }
+
+    /* Reservation page */
+
+    main#reservation .reservation-form{
+        grid-column: span 2;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    main#reservation .rental-agreement{
+        grid-column: span 2;
+        margin: 6rem auto;
+        width: 90%;
+    }
+
+    main#reservation section.reservation-form form {
+        padding: 4.5rem 5rem;
+        margin: 1rem auto;
+    }
+
+    /* Rental page */
+
+    main#rental section.hero {
+        grid-column: span 4;
+    }
+
+    main#rental section.hero p {
+        padding: 5rem;
+        font-size: 4rem;
+        width: 80%;
+    }
+
+    main#rental section.rental-options {
+        grid-column: span 4;
+        margin: 1rem auto;
+    }
+
+    main#rental section.rental-options div.rental-container table.rental-table {
+        border-spacing: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    main#rental section.rental-options div.rental-container table.rental-table>tr:first-child{
+        padding: 1rem;
+    }
+}
